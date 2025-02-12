@@ -1,0 +1,270 @@
+/* Body Background */
+body {
+    background-color: #fff293;
+    background-image: linear-gradient(315deg, #fff293 0%, #ffe884 74%);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+/* Navigation Bar */
+.nav {
+    display: flex;
+    justify-content: space-between; /* Push left & right */
+    align-items: center;
+    padding: 15px 50px; /* Adds space from edges */
+   /* Brown background */
+   
+}
+
+/* Portfolio Text (Left Side) */
+
+
+
+
+/* Connect Button (Right Side) */
+.connect-btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    background: none;
+    color: rgb(228, 80, 80);
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Hover Effect for Connect */
+.connect-btn:hover {
+    background: #ee823f; /* Gold Background */
+    color: black;
+    border-color: #f4bfa5;
+    cursor: pointer;
+}
+
+
+/* Flexbox Container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+/* Left Side: Image */
+/* Left Side: Image */
+
+.image {
+    width: 50%;  
+    display: flex;
+    justify-content: center;
+}
+
+/* Image Animation */
+
+.image img {
+    width: 80%;  
+    max-width: 400px;
+    border-radius: 10px;
+    border: 8px solid #8B4513; /* Thicker border */
+    animation: borderAnimation 3s infinite alternate ease-in-out;
+}
+
+/* Enhanced Border Color Animation */
+@keyframes borderAnimation {
+    0% { border-color: #8B4513; }   /* Saddle Brown */
+    25% { border-color: #A0522D; }  /* Sienna */
+    50% { border-color: #CD853F; }  /* Peru */
+    75% { border-color: #D2B48C; }  /* Tan */
+    100% { border-color: #8B4513; } /* Back to Saddle Brown */
+}
+
+
+
+/* Right Side: Text Content */
+.bod {
+    width: 50%;  /* Takes 50% of the page */
+    padding-left: 50px;
+    color: rgb(25, 25, 25);
+}
+
+.bod h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.bod p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 500px;
+}
+/* Style for the entire text */
+.text {
+    font-size: 30px;
+    font-weight: bold;
+    color: black; /* Keeps "I'm a" black */
+}
+
+/* Animation only on "Developer" */
+.animate-text {
+    animation: textAnimation 5s infinite ease-in-out;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Keyframes for Color Transition */
+@keyframes textAnimation {
+    0% { color: #FFD700; }   /* Luxurious Gold */
+    25% { color: #4169E1; }  /* Royal Blue */
+    50% { color: #E5E4E2; }  /* Elegant Platinum */
+    75% { color: #FF4500; }  /* Deep Orange */
+    100% { color: #FFD700; } /* Back to Gold */
+}
+
+
+
+/* Button */
+.btn {
+    background-color: rgb(214, 187, 187);
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #8B4513;
+    color: rgb(222, 208, 208);
+}
+
+/* Responsive for Smaller Screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image, .bod {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .image img {
+        width: 60%;
+    }
+}
+
+.btn-grad {background-image: linear-gradient(to right, #603813 0%, #b29f94  51%, #603813  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+.portfolio
+{
+    padding: 10px;
+    font-family: cursive;
+    font-size: larger;
+}
+.box1{
+    max-width: 600px;
+    width:500px;
+    height:10px;
+    border: 2px solid black;
+    background-color: blanchedalmond;
+}
+.skill {
+   
+    align-items: center;
+    padding-bottom: 20PX;
+    padding-left: 450px;
+    
+}
+
+.skill-name {
+    
+    font-weight: bold;
+}
+
+.skill-bar {
+    flex: 1;
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+   
+    
+}
+
+.skill-level {
+    height: 10px;
+    background: #4caf50;
+    border-radius: 10px;
+}
+
+.skill-percent {
+   
+    text-align: right;
+}
+.circle-container {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: lightgray;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-circle span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Progress for each language */
+.english {
+    background: conic-gradient(#4caf50 0% 95%, lightgray 90% 100%);
+}
+
+.tamil {
+    background: conic-gradient(#2196f3 0% 100%, lightgray 80% 100%);
+}
+
+.hindi {
+    background: conic-gradient(#ff9800 0% 60%, lightgray 60% 100%);
+}
